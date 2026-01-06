@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import MainLayout from "./MainLyaout";
+
 
 function App() {
   return (
-    <>
-    <h1>React Router</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
-
