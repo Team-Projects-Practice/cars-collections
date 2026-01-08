@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />   {/* THIS IS REQUIRED */}
+      <Outlet />   
     </>
   );
 };
