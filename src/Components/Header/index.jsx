@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 import { Link } from 'react-router-dom'
 import { UserIcon,XIcon,Downarrow,Telephone,MenuIcon,MobileIcon } from '../../Res/icons'
-import "./style.scss"
+import "./style.scss";
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);     
 
@@ -12,7 +12,6 @@ const Index = () => {
 
          {/* LEFT */}
          <div className="left__header xs-flex xs-row xs-space-between flex gap-7 middle ">
-         {/* xs-flex xs-row xs-space-between */}
            <div className="logo ">
              <img className="image-contain" src="images/header/logo.png" />
            </div>
