@@ -1,16 +1,34 @@
-import carImage from "../Images/car.jpg";
-import "../App.css";
+import { useState } from "react";
+import carImage1 from "../Images/car.jpg";
+import carImage2 from "../Images/car3.jpg";
+import carImage3 from "../Images/h10.jpg";
+
+const images = [carImage1,carImage3,carImage2];
 
 const About = () =>{
 
+const [currentIndex,setCurrentIndex] = useState(0);
+ 
+ const leftClick = () =>{
+  setCurrentIndex(
+    currentIndex === 0 ? Image.length -1 :currentIndex +1
+  )
+ };
+ const rightClick = () =>{
+  setCurrentIndex(
+    currentIndex === Image.length -1 ? 0  :currentIndex -1
+  )
+ };
+
+
     return(
 
-        <>
+         <>
         <section className="Breadcum">
 
     
-    <div className="hero"
-      style={{ backgroundImage: `url(${carImage})` }}
+    <div className="Breadcrumb-content"
+      style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
     
   
@@ -23,8 +41,8 @@ const About = () =>{
       </div>
 
       <div className="arrows">
-        <button className="arrow">&#10094;</button>
-        <button className="arrow">&#10095;</button>
+        <button className="arrow" onClick={leftClick}>&#10094;</button>
+        <button className="arrow"onClick={rightClick}>&#10095;</button>
       </div>
     </div>
     
