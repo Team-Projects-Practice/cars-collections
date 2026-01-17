@@ -1,20 +1,21 @@
-
-import './App.scss';
-import Header from"./Components/Header/Header"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from"./Components/Header/Header.jsx"
 import Home from "./Components/Pages/Home/Home";
-import Contact from "./Components/Pages/Contact/Contact";
-import { Routes,Route } from "react-router-dom";
- function App() {
+import Contact from"./Components/Pages/Contact/Contact.jsx"
+
+function App() {
   return (
-    <div className="App">
-   <Header/>
-      <Routes>
-       <Route path='/home' element={<Home/>}/>
-         <Route path='/contact' element={<Contact/>}/>
-      </Routes> 
-  
-  
-    </div>
+    <>
+    <Header/>
+
+     <Routes>
+        <Route path="/" element={<Home />} />
+         <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
+
+    
   );
 }
 
