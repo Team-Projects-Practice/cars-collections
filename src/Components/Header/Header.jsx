@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import "./header.scss"
 import { Link } from 'react-router-dom'
-import { UserIcon, XIcon, Downarrow, Telephone, MenuIcon, MobileIcon } from '../../Res/icons'
+import { UserIcon, XIcon, Downarrow, MenuIcon, MobileIcon } from '../../Res/icons'
 const Index = () => {
+  const [menu,setMenu]=useState("about")
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="header__container">
@@ -11,12 +12,13 @@ const Index = () => {
         {/* LEFT */}
         <div className="left__header">
           <div className="logo ">
-            <img src="images/header/logo.png" />
+            <img src="images/header/logo.png"  />
           </div>
 
           {/* NAV */}
           <div className={`nav ${menuOpen ? "active" : ""}`}>
-            <ul>
+            
+                <ul>
               <li><Link to="/home">Home <Downarrow /></Link></li>
               <li><Link to="/listings">Listings <Downarrow /></Link></li>
               <li> <Link to="/blog">Blog <Downarrow /></Link></li>
