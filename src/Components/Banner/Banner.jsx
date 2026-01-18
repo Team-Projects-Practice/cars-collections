@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { LeftArrow, RightArrow } from "../../Res/icons";
-import"./baner.scss"
+import"./banner.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

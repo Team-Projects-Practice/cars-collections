@@ -1,9 +1,9 @@
 import React from 'react'
-import Baner from '../../Baner/Baner';
+import Banner from '../../Banner/Banner';
 const Home = () => {
   return (
     <div>
-   <Baner/>
+   <Banner/>
     </div>
   )
 }
