@@ -98,6 +98,13 @@ const SocialIcons = ({ color = "currentcolor" }) => {
 
     )
 }
+const DotIcon = ({ color = "currentcolor" }) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+<rect width="4" height="4" rx="2" fill="#050B20"/>
+</svg>
+    )
+}
 export {
-    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons
+    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon
      }
