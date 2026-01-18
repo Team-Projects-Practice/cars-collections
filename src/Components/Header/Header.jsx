@@ -3,6 +3,7 @@ import "./header.scss"
 import { Link } from 'react-router-dom'
 import { UserIcon, XIcon, Downarrow,MenuIcon, MobileIcon } from '../../Res/icons'
 const Index = () => {
+  const [menu,setMenu]=useState("about")
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="header__container">
@@ -16,7 +17,8 @@ const Index = () => {
 
           {/* NAV */}
           <div className={`nav ${menuOpen ? "active" : ""}`}>
-            <ul>
+            
+                <ul>
               <li><Link to="/home">Home <Downarrow /></Link></li>
               <li><Link to="/listings">Listings <Downarrow /></Link></li>
               <li> <Link to="/blog">Blog <Downarrow /></Link></li>

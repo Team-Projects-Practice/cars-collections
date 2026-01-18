@@ -1,0 +1,139 @@
+.topfooter__container{
+  margin:0 90px;
+.top__footer{
+  padding: 55px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+      h2{
+        padding-bottom: 19px;
+     font-size: 20px;
+     line-height:24px;
+     font-weight: 500; 
+     color:#050B20;  
+    }
+    ul{
+        font-size:15px;
+        font-weight: 400;
+        line-height: 28px;
+        list-style: none;
+        li{
+            padding-bottom: 11px;
+            color:rgba(5, 11, 32, 1)
+        }
+}
+.sale__hours{
+  p{
+font-size: 15px;
+line-height: 37px;
+font-weight: 400;
+  span {
+    display: block;
+  }
+}
+  }
+  .social__icons{
+  h5{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+ padding:32px 0;
+  }
+  }
+}
+}
+@media (min-width: 320px){
+ .topfooter__container {
+  margin: 0 10px;
+.top__footer {
+    padding: 25px 0;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+    h2 {
+      padding-bottom: 16px;
+      font-size: 18px;
+      line-height: 20px;
+     }
+.sale__hours {
+      p {
+        font-size: 14px;
+        line-height: 26px; }
+    }
+ .social__icons {
+      h5 {
+        font-size: 16px;
+        padding: 16px 0;
+        }
+    }
+  }
+}
+ }
+@media (min-width: 768px) {
+  .topfooter__container {
+    margin: 0 20px;
+.top__footer {
+ flex-direction: row;
+      justify-content: space-between;
+      column-gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .topfooter__container {
+    margin: 0 30px;
+
+    .top__footer {
+      padding: 35px 0;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      ul {
+        font-size: 14px;
+        line-height: 26px;
+      }
+
+      .sale__hours p {
+        font-size: 14px;
+        line-height: 30px;
+      }
+
+      .social__icons h5 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .topfooter__container {
+    margin: 0 90px;
+
+    .top__footer {
+      padding: 55px 0;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      ul {
+        font-size: 15px;
+        line-height: 28px;
+      }
+
+      .sale__hours p {
+        font-size: 15px;
+        line-height: 37px;
+      }
+
+      .social__icons h5 {
+        font-size: 20px;
+        padding: 32px 0;
+      }
+    }
+  }
+}
+
+
