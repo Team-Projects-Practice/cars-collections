@@ -1,0 +1,154 @@
+.banner {
+  margin-bottom: 120px;
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+
+
+  .Banner__slide {
+    position: relative;
+    width: 100%;
+    height:600px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .Banner__text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+
+    p {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 400;
+      padding-bottom: 30px;
+    
+     
+
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 500;
+     line-height: 52px;
+      padding-bottom: 86px;
+
+    }
+  }
+
+  /* ARROWS */
+  .banner__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 63px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+
+    svg {
+      width: 13px;
+      height: 23px;
+    
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+   
+  }
+
+  .banner__arrow.left {
+    left: 30px;
+  }
+
+  .banner__arrow.right {
+    right: 30px;
+  }
+
+  @media (max-width: 1200px) {
+
+    .Banner__text {
+      top: 90px;
+      transform: translateX(-50%);
+p{
+  font-size: 12px;
+}
+ h1 {
+      font-size: 25px;
+    }
+    }
+
+    
+  }
+
+  @media (max-width: 767px) {
+      .Banner__slide {
+    position: relative;
+    width: 100%;
+    height:450px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+    .Banner__text {
+      top: 40px;
+      width: 100%;
+    
+
+    h1 {
+      font-size: 18px;
+    padding-bottom: 20px;
+    }
+
+     p {
+      font-size: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    }
+  }
+
+    .banner__arrow {
+      width: 32px;
+      height: 32px;
+
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .banner__arrow.left {
+      left: 10px;
+    }
+
+    .banner__arrow.right {
+      right: 10px;
+    }
+  }
+}
+
+
+
