@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./header.scss"
 import { Link } from 'react-router-dom'
-import { UserIcon, XIcon, Downarrow, MenuIcon, MobileIcon } from '../../Res/icons'
+import { UserIcon, XIcon, Downarrow,MenuIcon, MobileIcon } from '../../Res/icons'
 const Index = () => {
   const [menu,setMenu]=useState("about")
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const Index = () => {
         {/* LEFT */}
         <div className="left__header">
           <div className="logo ">
-            <img src="images/header/logo.png"  />
+            <img src="images/header/logo.png" alt="img"/>
           </div>
 
           {/* NAV */}
