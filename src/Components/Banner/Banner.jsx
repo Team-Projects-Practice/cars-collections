@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import { LeftArrow, RightArrow } from "../../Res/icons";
-import"./banner.scss"
+import "./banner.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useData } from "../../Context/Context";
 /* Left Arrow */
 const PrevArrow = ({ onClick }) => (
   <button
@@ -26,42 +26,50 @@ const NextArrow = ({ onClick }) => (
   </button>
 );
 
-
-const Baner = () => {
- const settings = {
-  dots: false,
-  infinite: true,
-  speed: 600,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
-};
+const Banner = () => {
+  const { selectedBodyStyle } = useData()
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+  };
 
   return (
     <div className="banner">
       <Slider {...settings}>
+        {selectedBodyStyle && (
+          <div className="Banner__slide">
+            <img style={{ backgroundColor: "red" }}
+              src={selectedBodyStyle.image}
+            />
+            <div className="Banner__text">
+              <h1>Find Your Perfect Vehicle Online</h1>
+              <p>{selectedBodyStyle.title}</p>
+            </div>
+          </div>
+        )}
         <div className="Banner__slide">
           <img src="/images/Bannerimg/car.jpg" alt="Car Banner" />
           <div className="Banner__text">
             <p>The World’s Largest Used Car Dealership</p>
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
-        </div>
-
-        <div className="Banner__slide">
+        </div> <div className="Banner__slide">
           <img src="/images/Bannerimg/car3.jpg" alt="Car Banner" />
           <div className="Banner__text">
             <p>The World’s Largest Used Car Dealership</p>
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
         </div>
-
-        <div className="Banner__slide">
+       <div className="Banner__slide">
           <img src="/images/Bannerimg/h10.jpg" alt="Car Banner" />
           <div className="Banner__text">
-          <p>The World’s Largest Used Car Dealership</p>
+            <p>The World’s Largest Used Car Dealership</p>
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
         </div>
@@ -70,4 +78,4 @@ const Baner = () => {
   );
 };
 
-export default Baner;
+export default Banner;

@@ -4,11 +4,14 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import{BrowserRouter}from"react-router-dom"
+import { CartypeProvider } from './Context/Context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <CartypeProvider>
     <App />
+    </CartypeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
