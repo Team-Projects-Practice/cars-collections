@@ -44,7 +44,7 @@ const Banner = () => {
       <Slider {...settings}>
         {selectedBodyStyle && (
           <div className="Banner__slide">
-            <img style={{ backgroundColor: "red" }}
+            <img
               src={selectedBodyStyle.image}
             />
             <div className="Banner__text">

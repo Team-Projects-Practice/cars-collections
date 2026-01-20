@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <CartypeProvider>
-   <Banner/>
-   <Carbodystyles/>
-   </CartypeProvider>
+        <Banner />
+        <Carbodystyles />
+      </CartypeProvider>
     </div>
   )
 }
