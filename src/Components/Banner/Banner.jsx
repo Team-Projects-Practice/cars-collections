@@ -59,13 +59,16 @@ const Banner = () => {
             <p>The World’s Largest Used Car Dealership</p>
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
-        </div> <div className="Banner__slide">
+        </div>
+
+        <div className="Banner__slide">
           <img src="/images/Bannerimg/car3.jpg" alt="Car Banner" />
           <div className="Banner__text">
             <p>The World’s Largest Used Car Dealership</p>
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
         </div>
+        
        <div className="Banner__slide">
           <img src="/images/Bannerimg/h10.jpg" alt="Car Banner" />
           <div className="Banner__text">
