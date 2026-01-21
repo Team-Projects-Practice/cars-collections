@@ -6,12 +6,10 @@ const Footer = () => {
   return (
     <div className="footer__container">
       <div className="footer">
-
-       <Topfooter/>
-    <Bottomfooter/>
+        <Topfooter />
+        <Bottomfooter />
       </div>
     </div>
   )
 }
-
 export default Footer
