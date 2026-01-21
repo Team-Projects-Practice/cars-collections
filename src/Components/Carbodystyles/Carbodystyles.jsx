@@ -1,15 +1,15 @@
 import React from 'react'
-import { useData } from '../../Context/Context'
+import { useData } from '../../Homecontext/Homecontext'
 import "./carbodystyle.scss"
 const Bodystyle = () => {
-  const { Cartypes, setSelectedBodyStyle } = useData()
+  const { cartypes, setSelectedBodyStyle } = useData()
   return (
 
     <div className="bodystyles__container">
       <div className="bodystyles">
         <h1>Select a Body Style</h1>
         <div className="cartypes">
-          {Cartypes.map((item) => (
+          {cartypes.map((item) => (
             <div key={item.id}
               onClick={() => {
                 console.log("CLICKED BODY:", item);

@@ -4,7 +4,7 @@ import { LeftArrow, RightArrow } from "../../Res/icons";
 import "./banner.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useData } from "../../Context/Context";
+import { useData } from "../../Homecontext/Homecontext";
 /* Left Arrow */
 const PrevArrow = ({ onClick }) => (
   <button
@@ -68,7 +68,7 @@ const Banner = () => {
             <h1>Find Your Perfect Vehicle Online</h1>
           </div>
         </div>
-        
+      
        <div className="Banner__slide">
           <img src="/images/Bannerimg/h10.jpg" alt="Car Banner" />
           <div className="Banner__text">

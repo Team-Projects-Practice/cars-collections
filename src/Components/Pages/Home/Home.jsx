@@ -1,5 +1,6 @@
 import React from 'react'
-import { CartypeProvider } from '../../../Context/Context';
+import { CartypeProvider } from '../../../Homecontext/Homecontext';
+// import { CartypeProvider } from '../../../Context/Context';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
 const Home = () => {

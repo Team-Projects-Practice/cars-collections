@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { list } from "../Components/data";
+import{list}from"../Utility/cartypes"
 const CartypeContext = createContext();
 export const CartypeProvider = ({ children }) => {
   const [selectedBodyStyle, setSelectedBodyStyle] = useState(null);
@@ -7,7 +7,7 @@ export const CartypeProvider = ({ children }) => {
   return (
     <CartypeContext.Provider
       value={{
-        Cartypes: list,   
+        cartypes: list,   
         selectedBodyStyle,
         setSelectedBodyStyle,
       }}
