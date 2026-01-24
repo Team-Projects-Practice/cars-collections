@@ -1,25 +1,25 @@
 import React from "react";
 import "./features.scss";
-import { FillIcon ,Fill2Icon ,Fill3Icon ,Fill4Icon } from "../../Res/icons";
+import { PricingTagIcon,DiamondIcon, FinanceIcon,CarIcon } from "../../Res/icons";
 
 const featuresData = [
   {
-    icon: < FillIcon />,
+    icon: < PricingTagIcon />,
     title: "Special Financing Offers",
     desc: "Our stress-free finance department that can find financial solutions to save you money.",
   },
   {
-    icon: <Fill2Icon />,
+    icon: <DiamondIcon />,
     title: "Trusted Car Dealership",
     desc: "Our stress-free finance department that can find financial solutions to save you money.",
   },
   {
-    icon:<Fill3Icon />, 
+    icon:< FinanceIcon/>, 
     title: "Transparent Pricing",
     desc: "Our stress-free finance department that can find financial solutions to save you money.",
   },
   {
-    icon:<Fill4Icon />,
+    icon:<CarIcon />,
     title: "Expert Car Service",
     desc: "Our stress-free finance department that can find financial solutions to save you money.",
   },

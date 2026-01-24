@@ -73,7 +73,7 @@ const LeftArrow = ({ color = "currentcolor"  }) => {
      </svg>
     )
 }
-const  FillIcon = ({ color = "currentcolor",  }) => {
+const  PricingTagIcon = ({ color = "currentcolor",  }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="51" height="60" viewBox="0 0 51 60" fill="none">
 <g clip-path="url(#clip0_5_6842)">
@@ -103,7 +103,7 @@ const  FillIcon = ({ color = "currentcolor",  }) => {
 
 
 }
- const  Fill2Icon = ({color = "currentcolor"}) =>{
+ const  DiamondIcon = ({color = "currentcolor"}) =>{
     return(
         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
 <path d="M30 2.34375V7.03125" stroke="#E1E1E1" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -117,7 +117,7 @@ const  FillIcon = ({ color = "currentcolor",  }) => {
 </svg>
     )
  }
- const Fill3Icon = ({ color = "currentcolor"}) =>{
+ const FinanceIcon = ({ color = "currentcolor"}) =>{
     return(
         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
 <g clip-path="url(#clip0_5_6869)">
@@ -146,7 +146,7 @@ const  FillIcon = ({ color = "currentcolor",  }) => {
 </svg>
     )
  }
- const Fill4Icon = ({color = "currentcolor"}) =>{
+ const CarIcon = ({color = "currentcolor"}) =>{
     return(
         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
 <g clip-path="url(#clip0_5_6884)">
@@ -195,7 +195,8 @@ const DotIcon = ({ color = "currentcolor" }) => {
 </svg>
     )
 }
+ 
 export {
-    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,FillIcon,Fill2Icon,
-    Fill3Icon,Fill4Icon
+    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,DiamondIcon,
+    FinanceIcon,CarIcon
      }
