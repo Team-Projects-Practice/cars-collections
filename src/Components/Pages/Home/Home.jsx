@@ -3,6 +3,7 @@ import { CartypeProvider } from '../../../Homecontext/Homecontext';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
 import Features from '../../Features/Features';
+import Carcard from '../../Cards/Carcard';
 const Home = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Home = () => {
         <Banner />
         <Carbodystyles />
         <Features />
+        <Carcard />
       </CartypeProvider>
     </div>
   )
