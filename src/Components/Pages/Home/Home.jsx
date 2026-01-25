@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import { CartypeProvider } from '../../../Homecontext/Homecontext';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
@@ -9,10 +9,9 @@ const Home = () => {
       <CartypeProvider>
         <Banner />
         <Carbodystyles />
-        <Features/>
+        <Features />
       </CartypeProvider>
     </div>
   )
 }
-
-export default Home;
+export default Home
