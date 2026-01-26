@@ -2,6 +2,7 @@ import React from 'react'
 import { CartypeProvider } from '../../../Homecontext/Homecontext';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
+import Searchedcars from '../../Searchedcars/Searchedcars';
 const Home = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const Home = () => {
         <Banner />
         <Carbodystyles />
       </CartypeProvider>
+      <Searchedcars/>
     </div>
   )
 }
