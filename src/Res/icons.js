@@ -195,7 +195,7 @@ const DotIcon = ({ color = "currentcolor" }) => {
 </svg>
     )
 }
-  const ElectriccarIcon = ({ color = "currentcolor" }) => {
+ const ElectriccarIcon = ({ color = "currentcolor" }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
 <g clip-path="url(#clip0_5_7044)">
