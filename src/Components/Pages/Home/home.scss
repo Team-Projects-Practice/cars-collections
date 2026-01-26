@@ -1,0 +1,14 @@
+.home-container{
+    .car-service-container{
+        padding: 80px 16px;
+        background-color: #ffffff;
+        &__row{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            .cards{
+                width: calc(50% - 15px);
+            }
+        }
+    }
+}
