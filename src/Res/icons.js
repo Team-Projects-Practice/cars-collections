@@ -240,6 +240,5 @@ const CrosarowIcon = ({ color = "currentcolor" }) => {
 }
  
 export {
-    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,DiamondIcon,
-    FinanceIcon,CarIcon,ElectriccarIcon,Electriccar2Icon,CrosarowIcon 
+    MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,DiamondIcon,FinanceIcon,CarIcon,ElectriccarIcon,Electriccar2Icon,CrosarowIcon
      }

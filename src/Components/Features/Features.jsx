@@ -4,7 +4,7 @@ import { PricingTagIcon,DiamondIcon, FinanceIcon,CarIcon } from "../../Res/icons
 
 const featuresData = [
   {
-    icon: < PricingTagIcon />,
+    icon: < PricingTagIcon/>,
     title: "Special Financing Offers",
     desc: "Our stress-free finance department that can find financial solutions to save you money.",
   },
