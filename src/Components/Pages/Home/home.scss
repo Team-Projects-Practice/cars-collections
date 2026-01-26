@@ -2,12 +2,13 @@
     .car-service-container{
         padding: 80px 16px;
         background-color: #ffffff;
-        .car-service-container__row{
-            max-width: 1400px;
-            margin: 0 auto;
+        &__row{
             display: flex;
             gap: 30px;
             flex-wrap: wrap;
+            .cards{
+                width: calc(50% - 15px);
+            }
         }
     }
 }
