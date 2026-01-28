@@ -3,17 +3,20 @@ import { CartypeProvider } from '../../../Homecontext/Homecontext';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
 import Features from '../../Features/Features';
+import Searchedcars from '../../Searchedcars/Searchedcars';
 import CarServiceCard from '../../CarServiceCard/CarServiceCard';
 import cardData from '../../../Utility/carServiceCards/carServiceCards';
 import "./home.scss";
-import Searchedcars from '../../Searchedcars/Searchedcars';
 const Home = () => {
   return (
     <div className='home-container'>
       <CartypeProvider>
         <Banner />
         <Carbodystyles />
+         </CartypeProvider>
         <Features />
+           <Searchedcars/>
+           <CarServiceCard/>
         <div className='car-service-container'>
           <div className="car-service-container__row">
             {
@@ -30,9 +33,8 @@ const Home = () => {
             }
           </div>
         </div>
-      </CartypeProvider>
-      <Searchedcars/>
-    </div>
+     
+       </div>
   )
 }
 
