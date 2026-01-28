@@ -34,7 +34,7 @@ const Searchedcars = () => {
 
   return (
     <div className="searchedcars">
-      <Searchedcartitle />
+      <Searchedcartitle title="The Most Searched Cars" />
       <Tabs
         data={cars}
         menu={menu}

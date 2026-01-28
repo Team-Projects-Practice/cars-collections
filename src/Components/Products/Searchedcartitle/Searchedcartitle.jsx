@@ -1,9 +1,9 @@
 import React from 'react'
 import "./searchedcartitle.scss"
-const Searchedcartitle = () => {
+const Searchedcartitle = ({title}) => {
   return (
     <div className="searchedcar__title">
-       <h2>The Most Searched Cars</h2>  
+       <h2>{title}</h2>  
     </div>
   )
 }
