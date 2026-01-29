@@ -66,8 +66,7 @@ const Home = () => {
           data={cars}
           iconMap={iconMap}
           PrevArrow={PrevArrow}
-          NextArrow={NextArrow}
-        />
+          NextArrow={NextArrow}/>
       </div>
       <div className="latest-blogs">
         {Blogpost.map((post, index) => (
@@ -113,8 +112,8 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 
 export default Home
