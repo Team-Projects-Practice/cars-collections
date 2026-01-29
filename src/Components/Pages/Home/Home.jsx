@@ -9,20 +9,20 @@ import cardData from '../../../Utility/carServiceCards/carServiceCards';
 import Searchedcartitle from '../../Products/Searchedcartitle/Searchedcartitle';
 import Cardslider from '../../Products/Cardslider/Cardslider';
 import { cars } from '../../../Utility/searchedcars';
-import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } from '../../../Res/icons';
-import "./home.scss";
-const iconMap = {
-  miles: <MilesIcon />,
-  hybrid: <HybridIcon />,
-  cvt: <CvtIcon />,
-};
+import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } 
+from '../../../Res/icons';
 import BlogHeader from "../../Blogheader/BlogHeader";
 import { Blogpost, Brand } from '../../../Utility/Blogpost';
 import CarBlogcard from '../../BolgPost/CarBlogcard';
 import carBlogPosts from "../../../Utility/CarBlogPost/carBlogPosts";
 import BrandCard from "../../Carbrand/BrandCard";
 import brandData from "../../../Utility/BrandCard/brandData";
-
+import "./home.scss";
+const iconMap = {
+  miles: <MilesIcon />,
+  hybrid: <HybridIcon />,
+  cvt: <CvtIcon />,
+};
 const PrevArrow = ({ onClick }) => (
   <button className="slider__arrow left" onClick={onClick}>
     <SliderLeftArrow />
@@ -61,6 +61,14 @@ const Home = () => {
             }
           </div>
         </div>
+           <div className="recommended__cars">
+         <Searchedcartitle title="Recommended Cars For You"/>
+         <Cardslider  data={cars}
+        iconMap={iconMap}
+        PrevArrow={PrevArrow}
+        NextArrow={NextArrow} />
+
+   </div>
       <div className="latest-blogs">
         {Blogpost.map((post, index) => (
           <BlogHeader
@@ -107,5 +115,4 @@ const Home = () => {
        </div>
   )
 }
-
 export default Home
