@@ -60,15 +60,6 @@ const Home = () => {
             }
           </div>
         </div>
-      <div className="recommended__cars">
-        <Searchedcartitle title="Recommended Cars For You" />
-        <Cardslider
-          data={cars}
-          iconMap={iconMap}
-          PrevArrow={PrevArrow}
-          NextArrow={NextArrow}/>
-          
-      </div>
       <div className="latest-blogs">
         {Blogpost.map((post, index) => (
           <BlogHeader
@@ -112,9 +103,16 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </div>
+       <div className="recommended__cars">
+       <Searchedcartitle title="Recommended Cars For You"/>
+       <Cardslider  data={cars}
+        iconMap={iconMap}
+        PrevArrow={PrevArrow}
+        NextArrow={NextArrow} />
+
+   </div>
+       </div>
   )
 }
-
 
 export default Home
