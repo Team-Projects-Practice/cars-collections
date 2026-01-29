@@ -55,7 +55,7 @@ const Home = () => {
             }
           </div>
         </div>
-  <div className="recommended__cars">
+   <div className="recommended__cars">
 <Searchedcartitle title="Recommended Cars For You"/>
 <Cardslider  data={cars}
         iconMap={iconMap}
