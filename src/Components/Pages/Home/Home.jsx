@@ -60,53 +60,61 @@ const Home = () => {
             }
           </div>
         </div>
-        
-     <div className="latest-blogs">
-          {Blogpost.map((post, index)=>(
-         <BlogHeader
-           key={index}
-           title={post.title}
-           button={post.button}
+      <div className="recommended__cars">
+        <Searchedcartitle title="Recommended Cars For You" />
+        <Cardslider
+          data={cars}
+          iconMap={iconMap}
+          PrevArrow={PrevArrow}
+          NextArrow={NextArrow}
         />
-         ))}
-       </div>
-        <div className="Blogpost__Container">
-         <div className="Blogpost__Cards">
-        {carBlogPosts.map((blogpost,index) => (
-          <CarBlogcard
-            key={index}
-            image={blogpost.image}
-            category={blogpost.category}
-            date={blogpost.date}
-            title={blogpost.title}
-            author={blogpost.author}
-          />
-        ))}
-    </div>
-    </div>
-      <carBlogPosts  />
+      </div>
       <div className="latest-blogs">
-          {Brand.map((post, index)=>(
-         <BlogHeader
-           key={index}
-           title={post.title}
-           button={post.button}
-        />
-         ))}
-      </div>
-       <div className='brand-section'>
-        <div className="brand-container">
-        {brandData.map((item) => (
-          <BrandCard
-            key={item.id}
-            image={item.image}
-            title={item.title}
+        {Blogpost.map((post, index) => (
+          <BlogHeader
+            key={index}
+            title={post.title}
+            button={post.button}
           />
         ))}
       </div>
-     </div>
-     </div>
-     );
+      <div className="Blogpost__Container">
+        <div className="Blogpost__Cards">
+          {carBlogPosts.map((blog, index) => (
+            <CarBlogcard
+              key={index}
+              image={blog.image}
+              category={blog.category}
+              date={blog.date}
+              title={blog.title}
+              author={blog.author}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="latest-blogs">
+        {Brand.map((post, index) => (
+          <BlogHeader
+            key={index}
+            title={post.title}
+            button={post.button}
+          />
+        ))}
+      </div>
+      <div className="brand-section">
+        <div className="brand-container">
+          {brandData.map((item) => (
+            <BrandCard
+              key={item.id}
+              image={item.image}
+              title={item.title}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
+
 
 export default Home
