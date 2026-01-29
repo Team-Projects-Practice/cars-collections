@@ -92,7 +92,6 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <carBlogPosts  />
       <div className="latest-blogs">
         {Brand.map((post, index) => (
           <BlogHeader
