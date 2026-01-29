@@ -305,6 +305,5 @@ const SliderRightArrow = ({ color = "currentcolor", ...props }) => {
 export {
     MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,
     DiamondIcon,FinanceIcon,CarIcon,ElectriccarIcon,Electriccar2Icon,CrosarowIcon,MilesIcon,CvtIcon,HybridIcon,
-    ArrowIcon,BoockmarkIcon,SliderLeftArrow,SliderRightArrow,BrandArrowIcon
-     
+       ArrowIcon,BoockmarkIcon,SliderLeftArrow,SliderRightArrow
      } 
