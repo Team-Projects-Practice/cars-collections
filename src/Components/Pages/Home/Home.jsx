@@ -67,6 +67,7 @@ const Home = () => {
           iconMap={iconMap}
           PrevArrow={PrevArrow}
           NextArrow={NextArrow}/>
+          
       </div>
       <div className="latest-blogs">
         {Blogpost.map((post, index) => (
