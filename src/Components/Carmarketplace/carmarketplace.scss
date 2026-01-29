@@ -1,0 +1,51 @@
+.carmarketplace__container{
+    margin:100px 0;
+   .carmarketing{
+    .card__data{
+display:flex;
+
+   }
+   } 
+}
+@media (max-width: 1024px) {
+  .carmarketplace__container {
+    margin: 90px 0;
+
+    .carmarketing {
+      .card__data {
+        flex-direction: column;   // 🔥 stack
+        gap: 32px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carmarketplace__container {
+    margin: 80px 0;
+
+    .carmarketing {
+      .card__data {
+        gap: 24px;
+      }
+    }
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .carmarketplace__container {
+    margin: 60px 0;
+
+    .carmarketing {
+      .card__data {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+
+
