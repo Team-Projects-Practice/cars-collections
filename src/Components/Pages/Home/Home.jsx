@@ -3,8 +3,13 @@ import { CartypeProvider } from '../../../Homecontext/Homecontext';
 import Banner from '../../Banner/Banner';
 import Carbodystyles from '../../Carbodystyles/Carbodystyles';
 import Features from '../../Features/Features';
+import Searchedcars from '../../Searchedcars/Searchedcars';
 import CarServiceCard from '../../CarServiceCard/CarServiceCard';
 import cardData from '../../../Utility/carServiceCards/carServiceCards';
+import Searchedcartitle from '../../Products/Searchedcartitle/Searchedcartitle';
+import Cardslider from '../../Products/Cardslider/Cardslider';
+import { cars } from '../../../Utility/searchedcars';
+import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } from '../../../Res/icons';
 import BlogHeader from "../../Blogheader/BlogHeader";
 import { Blogpost, Brand } from '../../../Utility/Blogpost';
 import CarBlogcard from '../../BolgPost/CarBlogcard';
@@ -12,6 +17,22 @@ import carBlogPosts from "../../../Utility/CarBlogPost/carBlogPosts";
 import BrandCard from "../../Carbrand/BrandCard";
 import brandData from "../../../Utility/BrandCard/brandData";
 import "./home.scss";
+const iconMap = {
+  miles: <MilesIcon />,
+  hybrid: <HybridIcon />,
+  cvt: <CvtIcon />,
+};
+const PrevArrow = ({ onClick }) => (
+  <button className="slider__arrow left" onClick={onClick}>
+    <SliderLeftArrow />
+  </button>
+);
+
+const NextArrow = ({ onClick }) => (
+  <button className="slider__arrow right" onClick={onClick}>
+    <SliderRightArrow />
+  </button>
+);
 
 const Home = () => {
   return (
@@ -19,7 +40,10 @@ const Home = () => {
       <CartypeProvider>
         <Banner />
         <Carbodystyles />
+         </CartypeProvider>
         <Features />
+           <Searchedcars/>
+           <CarServiceCard/>
         <div className='car-service-container'>
           <div className="car-service-container__row">
             {
@@ -36,8 +60,9 @@ const Home = () => {
             }
           </div>
         </div>
-      <div className="latest-blogs">
-          {Blogpost.map((post,index)=>(
+        
+     <div className="latest-blogs">
+          {Blogpost.map((post, index)=>(
          <BlogHeader
            key={index}
            title={post.title}
@@ -60,15 +85,15 @@ const Home = () => {
     </div>
     </div>
       <carBlogPosts  />
-         <div className="latest-blogs">
-          {Brand.map((post,index)=>(
+      <div className="latest-blogs">
+          {Brand.map((post, index)=>(
          <BlogHeader
            key={index}
            title={post.title}
            button={post.button}
         />
          ))}
-       </div>
+      </div>
        <div className='brand-section'>
         <div className="brand-container">
         {brandData.map((item) => (
@@ -80,9 +105,8 @@ const Home = () => {
         ))}
       </div>
      </div>
-      </CartypeProvider>
      </div>
-     )
-}
+     );
+};
 
 export default Home

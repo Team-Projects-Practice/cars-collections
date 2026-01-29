@@ -1,0 +1,28 @@
+.searchedcar__title{
+   h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+        } 
+          @media (max-width: 1024px) {
+    h2 {
+      font-size: 32px;
+    
+    }
+  }
+
+  // Mobile
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  // Small mobile
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+    }
+  } 
+}
