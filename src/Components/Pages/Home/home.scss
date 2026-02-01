@@ -14,4 +14,29 @@
     .recommended__cars{
         margin: 20px 70px;
     }
+
+.Blogpost__Container {
+     background: #FFFFFF;
+     padding: 39px 75px 80px;
+
+  .Blogpost__Cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.latest-blogs {
+      background: #FFFFFF;
+      padding: 0 75px;
+
+}
+.brand-container {
+  background: #FFFFFF;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 39px 75px;
+  padding-bottom: 20px;
+}
 }
