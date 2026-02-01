@@ -10,7 +10,8 @@ import Searchedcartitle from '../../Products/Searchedcartitle/Searchedcartitle';
 import Cardslider from '../../Products/Cardslider/Cardslider';
 import { cars } from '../../../Utility/searchedcars';
 import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } from '../../../Res/icons';
-import Marketplace from"../../../Components/Carmarketplace/Carmarketplace"
+import Carmarketplace from"../../../Components/Carmarketplace/Carmarketplace"
+import Contactsection from '../../Contactsection/Contactsection';
 import "./home.scss";
 const iconMap = {
   miles: <MilesIcon />,
@@ -63,7 +64,8 @@ const Home = () => {
         NextArrow={NextArrow} />
 
    </div>
-   <Marketplace/>
+   <Carmarketplace/>
+   <Contactsection/>
        </div>
   )
 }
