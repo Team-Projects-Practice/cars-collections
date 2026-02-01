@@ -9,8 +9,15 @@ import cardData from '../../../Utility/carServiceCards/carServiceCards';
 import Searchedcartitle from '../../Products/Searchedcartitle/Searchedcartitle';
 import Cardslider from '../../Products/Cardslider/Cardslider';
 import { cars } from '../../../Utility/searchedcars';
-import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } from '../../../Res/icons';
-import Marketplace from"../../../Components/Carmarketplace/Carmarketplace"
+import { MilesIcon, HybridIcon, CvtIcon, SliderLeftArrow, SliderRightArrow } from '../../../Res/icons';
+import BlogHeader from "../../Blogheader/BlogHeader";
+import { Blogpost, Brand } from '../../../Utility/Blogpost';
+import CarBlogcard from '../../BolgPost/CarBlogcard';
+import carBlogPosts from "../../../Utility/CarBlogPost/carBlogPosts";
+import BrandCard from "../../Carbrand/BrandCard";
+import brandData from "../../../Utility/BrandCard/brandData";
+import Carmarketplace from "../../../Components/Carmarketplace/Carmarketplace"
+import Contactsection from '../../Contactsection/Contactsection';
 import "./home.scss";
 const iconMap = {
   miles: <MilesIcon />,
@@ -35,36 +42,86 @@ const Home = () => {
       <CartypeProvider>
         <Banner />
         <Carbodystyles />
-         </CartypeProvider>
-        <Features />
-           <Searchedcars/>
-           <CarServiceCard/>
-        <div className='car-service-container'>
-          <div className="car-service-container__row">
-            {
-              cardData.map(({ backGroundColor, icon, title, description, variant, buttonText }) => (
-                <CarServiceCard
-                  backGroundColor={backGroundColor}
-                  icon={icon}
-                  title={title}
-                  description={description}
-                  variant={variant}
-                  buttonText={buttonText}
-                />
-              ))
-            }
-          </div>
+      </CartypeProvider>
+      <Features />
+      <Searchedcars />
+      <CarServiceCard />
+      <div className='car-service-container'>
+        <div className="car-service-container__row">
+          {
+            cardData.map(({ backGroundColor, icon, title, description, variant, buttonText }) => (
+              <CarServiceCard
+                backGroundColor={backGroundColor}
+                icon={icon}
+                title={title}
+                description={description}
+                variant={variant}
+                buttonText={buttonText}
+              />
+            ))
+          }
         </div>
-   <div className="recommended__cars">
-<Searchedcartitle title="Recommended Cars For You"/>
-<Cardslider  data={cars}
-        iconMap={iconMap}
-        PrevArrow={PrevArrow}
-        NextArrow={NextArrow} />
+      </div>
+<div className="recommended__cars">
+        <Searchedcartitle title="Recommended Cars For You" />
+        <Cardslider data={cars}
+          iconMap={iconMap}
+          PrevArrow={PrevArrow}
+          NextArrow={NextArrow} />
 
-   </div>
-   <Marketplace/>
-       </div>
+      </div>
+      <Carmarketplace />
+        <div className="latest-blogs">
+        {Blogpost.map((post, index) => (
+          <BlogHeader
+            key={index}
+            title={post.title}
+            button={post.button}
+          />
+        ))}
+      </div>
+
+      {/* BLOG POSTS */}
+      <div className="Blogpost__Container">
+        <div className="Blogpost__Cards">
+          {carBlogPosts.map((blog, index) => (
+            <CarBlogcard
+              key={index}
+              image={blog.image}
+              category={blog.category}
+              date={blog.date}
+              title={blog.title}
+              author={blog.author}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* BRAND HEADER */}
+      <div className="latest-blogs">
+        {Brand.map((post, index) => (
+          <BlogHeader
+            key={index}
+            title={post.title}
+            button={post.button}
+          />
+        ))}
+      </div>
+
+      {/* BRAND CARDS */}
+      <div className="brand-section">
+        <div className="brand-container">
+          {brandData.map((item) => (
+            <BrandCard
+              key={item.id}
+              image={item.image}
+              title={item.title}
+            />
+          ))}
+        </div>
+      </div>
+      <Contactsection />
+    </div>
   )
 }
 
