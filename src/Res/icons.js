@@ -301,16 +301,25 @@ const SliderRightArrow = ({ color = "currentcolor", ...props }) => {
 </svg>
     )
 }
-const  TickMarkIcon = ({ color = "currentcolor", ...props }) => {
+const  TickMarkIcon = ({ color = "currentcolor" }) => {
     return (
        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
 <path d="M2.75 5.89062L0.15625 3.29688C0 3.14062 0 2.875 0.15625 2.71875L0.71875 2.15625C0.875 2 1.125 2 1.28125 2.15625L3.04688 3.90625L6.79688 0.15625C6.95312 0 7.20312 0 7.35938 0.15625L7.92188 0.71875C8.07812 0.875 8.07812 1.14062 7.92188 1.29688L3.32812 5.89062C3.17188 6.04688 2.90625 6.04688 2.75 5.89062Z" fill="white"/>
 </svg>
     )
 }
+const EmailIcon = ({ color = "currentcolor"}) => {
+    return (
+        <svg>
+  <path xmlns="http://www.w3.org/2000/svg" d="M18.1458 0H2.97917C1.33575 0 0 1.33575 0 2.97917V13.8125C0 15.4559 1.33575 16.7917 2.97917 16.7917H18.1458C19.7893 16.7917 21.125 15.4559 21.125 13.8125V2.97917C21.125 1.33575 19.7893 0 18.1458 0ZM18.1458 1.625C18.1708 1.625 18.1924 1.638 18.2163 1.63909L11.375 6.77084C10.8962 7.12942 10.2278 7.12942 9.75 6.77084L2.90875 1.63909C2.93367 1.638 2.95425 1.625 2.97917 1.625H18.1458ZM19.5 13.8125C19.5 14.5589 18.8923 15.1667 18.1458 15.1667H2.97917C2.23275 15.1667 1.625 14.5589 1.625 13.8125V2.97917C1.625 2.89575 1.65858 2.82317 1.67267 2.74409L8.775 8.07084C9.3015 8.46517 9.932 8.66234 10.5625 8.66234C11.193 8.66234 
+  11.8246 8.46517 12.35 8.07084L19.4523 2.74409C19.4664 2.82317 19.5 2.89575 19.5 2.97917V13.8125Z" fill="#050B20"/>
+  </svg>
+    )
+}
+ 
 export {
     MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,
     DiamondIcon,FinanceIcon,CarIcon,ElectriccarIcon,Electriccar2Icon,CrosarowIcon,MilesIcon,CvtIcon,HybridIcon,
     ArrowIcon,BoockmarkIcon,SliderLeftArrow,SliderRightArrow,
-    BrandArrowIcon,TickMarkIcon
+    BrandArrowIcon,EmailIcon,TickMarkIcon
      }

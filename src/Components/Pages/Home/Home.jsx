@@ -9,14 +9,15 @@ import cardData from '../../../Utility/carServiceCards/carServiceCards';
 import Searchedcartitle from '../../Products/Searchedcartitle/Searchedcartitle';
 import Cardslider from '../../Products/Cardslider/Cardslider';
 import { cars } from '../../../Utility/searchedcars';
-import { MilesIcon,HybridIcon,CvtIcon,SliderLeftArrow,SliderRightArrow } from '../../../Res/icons';
+import { MilesIcon, HybridIcon, CvtIcon, SliderLeftArrow, SliderRightArrow } from '../../../Res/icons';
 import BlogHeader from "../../Blogheader/BlogHeader";
 import { Blogpost, Brand } from '../../../Utility/Blogpost';
 import CarBlogcard from '../../BolgPost/CarBlogcard';
 import carBlogPosts from "../../../Utility/CarBlogPost/carBlogPosts";
 import BrandCard from "../../Carbrand/BrandCard";
 import brandData from "../../../Utility/BrandCard/brandData";
-import Marketplace from"../../../Components/Carmarketplace/Carmarketplace"
+import Carmarketplace from "../../../Components/Carmarketplace/Carmarketplace"
+import Contactsection from '../../Contactsection/Contactsection';
 import Testimonials from "../../Customerreview/Testimonials";
 import { reviewsData, summary } from '../../..//Utility/ReviewCare/care'; 
 import "./home.scss";
@@ -43,25 +44,25 @@ const Home = () => {
       <CartypeProvider>
         <Banner />
         <Carbodystyles />
-         </CartypeProvider>
-        <Features />
-           <Searchedcars/>
-           <CarServiceCard/>
-        <div className='car-service-container'>
-          <div className="car-service-container__row">
-            {
-              cardData.map(({ backGroundColor, icon, title, description, variant, buttonText }) => (
-                <CarServiceCard
-                  backGroundColor={backGroundColor}
-                  icon={icon}
-                  title={title}
-                  description={description}
-                  variant={variant}
-                  buttonText={buttonText}
-                />
-              ))
-            }
-          </div>
+      </CartypeProvider>
+      <Features />
+      <Searchedcars />
+      <CarServiceCard />
+      <div className='car-service-container'>
+        <div className="car-service-container__row">
+          {
+            cardData.map(({ backGroundColor, icon, title, description, variant, buttonText }) => (
+              <CarServiceCard
+                backGroundColor={backGroundColor}
+                icon={icon}
+                title={title}
+                description={description}
+                variant={variant}
+                buttonText={buttonText}
+              />
+            ))
+          }
+        </div>
         </div>
    <div className="recommended__cars">
 <Searchedcartitle title="Recommended Cars For You"/>
@@ -71,7 +72,7 @@ const Home = () => {
         NextArrow={NextArrow} />
       
    </div>
-      <Marketplace/>
+      <Carmarketplace />
    <div className="latest-blogs">
         {Blogpost.map((post, index) => (
           <BlogHeader
@@ -108,8 +109,7 @@ const Home = () => {
           />
         ))}
       </div>
-
-      {/* BRAND CARDS */}
+   {/* BRAND CARDS */}
       <div className="brand-section">
         <div className="brand-container">
           {brandData.map((item) => (
@@ -121,14 +121,16 @@ const Home = () => {
           ))}
         </div>
        </div>
-       <div className='testimonials-container'>
-  <Testimonials
-    reviews={reviewsData}
-     summaryData = {summary}
-     
-  />
-</div>
+  <div className='testimonials-container'>
+        <Testimonials
+          reviews={reviewsData}
+          summaryData={summary}
+        />
       </div>
+      <Contactsection />
+
+   </div>
+    
   )
 }
 
