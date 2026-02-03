@@ -17,6 +17,8 @@ import carBlogPosts from "../../../Utility/CarBlogPost/carBlogPosts";
 import BrandCard from "../../Carbrand/BrandCard";
 import brandData from "../../../Utility/BrandCard/brandData";
 import Marketplace from"../../../Components/Carmarketplace/Carmarketplace"
+import Testimonials from "../../Customerreview/Testimonials";
+import { reviewsData, summary } from '../../..//Utility/ReviewCare/care'; 
 import "./home.scss";
 const iconMap = {
   miles: <MilesIcon />,
@@ -118,8 +120,15 @@ const Home = () => {
             />
           ))}
         </div>
-      </div>
        </div>
+       <div className='testimonials-container'>
+  <Testimonials
+    reviews={reviewsData}
+     summaryData = {summary}
+     
+  />
+</div>
+      </div>
   )
 }
 

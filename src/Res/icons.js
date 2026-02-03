@@ -301,10 +301,16 @@ const SliderRightArrow = ({ color = "currentcolor", ...props }) => {
 </svg>
     )
 }
- 
+const  TickMarkIcon = ({ color = "currentcolor", ...props }) => {
+    return (
+       <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+<path d="M2.75 5.89062L0.15625 3.29688C0 3.14062 0 2.875 0.15625 2.71875L0.71875 2.15625C0.875 2 1.125 2 1.28125 2.15625L3.04688 3.90625L6.79688 0.15625C6.95312 0 7.20312 0 7.35938 0.15625L7.92188 0.71875C8.07812 0.875 8.07812 1.14062 7.92188 1.29688L3.32812 5.89062C3.17188 6.04688 2.90625 6.04688 2.75 5.89062Z" fill="white"/>
+</svg>
+    )
+}
 export {
     MobileIcon, Downarrow, XIcon, UserIcon,MenuIcon,RightArrow,LeftArrow,SocialIcons,DotIcon,PricingTagIcon,
     DiamondIcon,FinanceIcon,CarIcon,ElectriccarIcon,Electriccar2Icon,CrosarowIcon,MilesIcon,CvtIcon,HybridIcon,
     ArrowIcon,BoockmarkIcon,SliderLeftArrow,SliderRightArrow,
-    BrandArrowIcon
+    BrandArrowIcon,TickMarkIcon
      }
