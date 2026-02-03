@@ -1,0 +1,206 @@
+.testimonial__content {
+  width: 100%;
+  padding: 40px 40px;
+  background: #f5f6f7;
+}
+
+/* WRAPPER */
+.testimonial__wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 25px;
+}
+
+
+/* ================= LEFT SIDE ================= */
+.testimonial__left {
+  flex: 1;
+  padding-top: 30px;
+
+ 
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: Bold;
+    color: #111;
+    padding-bottom: 18px;
+    white-space: pre-line;
+    line-height: 48px;
+    text-transform: capitalize;
+  }
+
+  .rating-title {
+    font-size: 20px;
+    line-height: 20px;
+    color: #050B20;
+  }
+
+  .review-image {
+    width: 200px;
+    padding: 8px 0;
+  }
+ 
+  .reviews {
+    font-size: 15px;
+    color: #050B20;
+    line-height: 15px;
+    padding-bottom: 20px;
+}
+ .review-logo{
+    width: 100px;
+
+
+ }
+}
+
+/* ================= RIGHT SIDE ================= */
+.testimonial__right {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* arrows top right */
+.arrows {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 30px 0;
+}
+
+.arrows button {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 30px;
+  cursor: pointer;
+
+  width: 60px;   
+  height: 40px; 
+
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+
+  transition: 0.2s ease;
+}
+
+.arrows button svg {
+  width: 14px;   
+  height: 14px;
+  fill: #333;
+}
+
+.arrows button:hover {
+  background: #16a34a;
+}
+
+.arrows button:hover svg {
+  fill: #fff;
+}
+.review-card{
+  padding: 10px 10px;
+  .review-detail {
+  align-items: center;
+  padding: 0 6px 0 4px;
+}
+.review-detail{
+  width: 101px;
+  height: 20px;
+
+}
+.tickmark {
+  width: 18px;
+  height: 18px;
+  background: #6C6C83;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px  5px;
+}
+
+.tickmark svg {
+  width: 10px;
+  height: 10px;
+  fill: #fff;   
+}
+
+
+
+/* verified badge */
+.verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6C6C83;
+  padding-bottom: 10px;
+  padding: 0 0 9px 9px;
+
+
+ 
+}
+
+/* name */
+.review-card h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #050B20;
+}
+
+/* role */
+.role {
+  font-size: 14px;
+  color: #050B20;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+/* text */
+.text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 41px;
+  color: #050B20;
+}
+}
+/* review images */
+.review-card-images {
+  display: flex;
+  gap: 10px;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: #F9FBFC;
+  }
+
+  /* first image only */
+  img:first-child {
+    border: 2px solid #405FF2;
+    opacity: 1.7;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .testimonial__wrapper {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .arrows {
+    justify-content: center;
+  }
+}

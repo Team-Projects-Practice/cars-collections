@@ -18,6 +18,8 @@ import BrandCard from "../../Carbrand/BrandCard";
 import brandData from "../../../Utility/BrandCard/brandData";
 import Carmarketplace from "../../../Components/Carmarketplace/Carmarketplace"
 import Contactsection from '../../Contactsection/Contactsection';
+import Testimonials from "../../Customerreview/Testimonials";
+import { reviewsData, summary } from '../../..//Utility/ReviewCare/care'; 
 import "./home.scss";
 const iconMap = {
   miles: <MilesIcon />,
@@ -61,17 +63,17 @@ const Home = () => {
             ))
           }
         </div>
-      </div>
-<div className="recommended__cars">
-        <Searchedcartitle title="Recommended Cars For You" />
-        <Cardslider data={cars}
-          iconMap={iconMap}
-          PrevArrow={PrevArrow}
-          NextArrow={NextArrow} />
-
-      </div>
+        </div>
+   <div className="recommended__cars">
+<Searchedcartitle title="Recommended Cars For You"/>
+<Cardslider  data={cars}
+        iconMap={iconMap}
+        PrevArrow={PrevArrow}
+        NextArrow={NextArrow} />
+      
+   </div>
       <Carmarketplace />
-        <div className="latest-blogs">
+   <div className="latest-blogs">
         {Blogpost.map((post, index) => (
           <BlogHeader
             key={index}
@@ -107,8 +109,7 @@ const Home = () => {
           />
         ))}
       </div>
-
-      {/* BRAND CARDS */}
+   {/* BRAND CARDS */}
       <div className="brand-section">
         <div className="brand-container">
           {brandData.map((item) => (
@@ -119,9 +120,17 @@ const Home = () => {
             />
           ))}
         </div>
+       </div>
+  <div className='testimonials-container'>
+        <Testimonials
+          reviews={reviewsData}
+          summaryData={summary}
+        />
       </div>
       <Contactsection />
-    </div>
+
+   </div>
+    
   )
 }
 
